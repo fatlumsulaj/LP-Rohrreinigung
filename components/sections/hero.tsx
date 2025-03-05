@@ -16,7 +16,7 @@ export default function Hero() {
             rund um die Uhr für Sie da und lösen Verstopfungen schnell, sauber
             und zuverlässig.
           </p>
-          <div className="text-gray-300 flex gap-1 md:gap-5 mt-6 mb-5">
+          <div className="text-gray-300 flex gap-1 md:gap-5 mt-6">
             <div className="flex gap-1">
               <SquareCheck className="bg-main" />
               <p>Schnell & sauber</p>
@@ -30,10 +30,12 @@ export default function Hero() {
               <p>24/7 Notdienst</p>
             </div>
           </div>
-          <Button className="bg-secondary hover:bg-main hover:text-white text-black text-[17px] mt-2 lg:mt-2">
-            Unsere Leistungen
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <a href="tel:+" className="block mt-3 lg:mt-6">
+            <Button size="lg">
+              Jetzt Anrufen
+              <ArrowRight />
+            </Button>
+          </a>
         </div>
       </div>
       <img

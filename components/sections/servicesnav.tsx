@@ -14,13 +14,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ Icon, title, description }) =
       <Icon className="text-tertiary w-[70px] h-[70px] bg-white rounded-md p-3" />
       <p className="text-2xl font-semibold my-5">{title}</p>
       <p>{description}</p>
-      <div className="flex flex-row gap-5 mt-5">
-
-        <Button className="bg-tertiary hover:bg-main text-white text-[17px] mt-2 lg:mt-2">
+      <a href="tel:+" className="inline-block mt-3 lg:mt-4">
+        <Button variant="tertiary">
           Jetzt anrufen
-          <ArrowRight className="ml-2 h-5 w-5" />
+          <ArrowRight className="size-5" />
         </Button>
-      </div>
+      </a>
     </div>
   );
 };

@@ -2,13 +2,6 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-import Hero from "@/components/sections/hero";
-import Servicesnav from "@/components/sections/servicesnav";
-import About from "@/components/sections/about";
-import Services from "@/components/sections/services";
-import Projects from "@/components/sections/projects";
-import Faq from "@/components/sections/faq";
-import CallToAction from "@/components/sections/callToAction";
 import Footer from "@/components/footer";
 
 const figtree = Figtree({ subsets: ['latin'], variable: "--figtree", display: "swap" })
@@ -27,17 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${figtree.variable} ${figtree.className} antialiased`}>
         <Navbar />
-        <Hero />
-        <Servicesnav />
-        <About />
-        <Services />
-        <Projects />
-        <Faq />
-        <CallToAction />
-        <Footer />
         {children}
-        
-        
+        <Footer />
       </body>
     </html>
   );

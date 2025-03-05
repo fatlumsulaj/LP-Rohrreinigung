@@ -1,6 +1,10 @@
-import React from "react";
-import { PhoneCall, MapPin, Clock8, Menu, ArrowRight } from "lucide-react";
+"use client"
+
+import React, { useState } from "react";
 import Link from "next/link";
+
+import { PhoneCall, MapPin, Clock8, Menu, ArrowRight } from "lucide-react";
+
 import { Button } from "./ui/button";
 import {
   Sheet,
@@ -12,11 +16,14 @@ import {
 } from "@/components/ui/sheet";
 
 export default function Navbar() {
+  const [opened, setOpened] = useState(false);
+  const close = () => setOpened(false);
+
   return (
-    <nav className="bg-white px-4 md:px-8 lg:px-10 py-5 text-black">
+    <nav className="bg-white px-4 md:px-8 lg:px-10 text-black">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-row justify-between items-center border-b-0 lg:border-b-2 pb-2">
-          <p className="text-3xl font-bold">LP-Kanalservice</p>
+        <div className="flex flex-row justify-between items-center border-b-0 lg:border-b-2 py-4">
+          <Link href="/" className="text-2xl lg:text-3xl font-bold">LP-Kanalservice</Link>
           <div className="hidden lg:flex flex-row gap-12">
             <div className="flex flex-row items-center justify-center gap-3">
               <PhoneCall className="w-[35px] h-[35px] text-tertiary" />
@@ -43,7 +50,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className="flex lg:hidden">
-            <Sheet>
+            <Sheet open={opened} onOpenChange={setOpened}>
               <SheetTrigger>
                 <Menu />
               </SheetTrigger>
@@ -52,23 +59,23 @@ export default function Navbar() {
                   <SheetTitle className="text-[24px]">LP - Kanalservice</SheetTitle>
                   <ul className="flex flex-col gap-3 text-[19px]">
                     <li className="mt-4">
-                      <Link href="/">Startseite</Link>
+                      <Link onClick={close} href="/">Startseite</Link>
                     </li>
                     <li>
-                      <Link href="/">Über uns</Link>
+                      <Link onClick={close} href="/#ueber-uns">Über uns</Link>
                     </li>
                     <li>
-                      <Link href="/">Leistungen</Link>
+                      <Link onClick={close} href="/#leistungen">Leistungen</Link>
                     </li>
                     <li>
-                      <Link href="/">Referenzen</Link>
+                      <Link onClick={close} href="/#referenzen">Referenzen</Link>
                     </li>
                     <li>
-                      <Link href="/">FAQ</Link>
+                      <Link onClick={close} href="/#faq">FAQ</Link>
                     </li>
                     <li className="mt-4">
-                      <Link href="/">
-                        <Button className="bg-secondary hover:bg-main hover:text-white text-black text-[17px]">Kontakt aufnehmen</Button>
+                      <Link onClick={close} href="/kontakt">
+                        <Button className="bg-secondary hover:bg-secondary/90 hover:text-white text-black text-[17px]">Kontakt aufnehmen</Button>
                       </Link>
                     </li>
                   </ul>
@@ -77,7 +84,7 @@ export default function Navbar() {
             </Sheet>
           </div>
         </div>
-        <div className="hidden text-[17px] lg:flex justify-between items-center py-4">
+        <div className="hidden text-[17px] lg:flex justify-between items-center py-3">
           <ul
             className="flex flex-row gap-8
           "
@@ -86,22 +93,25 @@ export default function Navbar() {
               <Link href="/">Startseite</Link>
             </li>
             <li>
-              <Link href="/">Über uns</Link>
+              <Link href="/#ueber-uns">Über uns</Link>
             </li>
             <li>
-              <Link href="/">Leistungen</Link>
+              <Link href="/#leistungen">Leistungen</Link>
             </li>
             <li>
-              <Link href="/">Referenzen</Link>
+              <Link href="/#referenzen">Referenzen</Link>
             </li>
             <li>
-              <Link href="/">FAQ</Link>
+              <Link href="/#faq">FAQ</Link>
             </li>
           </ul>
-          <Button className="bg-secondary hover:bg-main hover:text-white text-black text-[17px]">
-            Kontakt aufnehmen
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link href="/kontakt">
+            <Button>
+              Kontakt aufnehmen
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
+
         </div>
       </div>
     </nav>

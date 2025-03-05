@@ -13,14 +13,13 @@ import {
   CloudRain,
   Droplets,
 } from "lucide-react";
+import Link from "next/link";
+import { Button } from "../ui/button";
 
 export default function ServicesSection() {
   return (
-    <section className="bg-slate-50 py-16 md:py-24 px-4 md:px-8 lg:px-10">
+    <section id="leistungen" className="bg-slate-50 py-14 md:py-20 lg:py-24 px-4 md:px-8 lg:px-10">
       <div className="max-w-7xl mx-auto">
-
-
-
         {/* First Service Section */}
         <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-12 mb-32">
           {/* Heading Section - Left Side */}
@@ -30,7 +29,7 @@ export default function ServicesSection() {
               <span className="text-blue-600">Schnelle</span> Hilfe bei
               Rohrverstopfungen - 24/7 Notdienst
             </h2>
-            <p className="text-slate-600 mb-8">
+            <p className="text-black/80">
               Eine plötzliche WC-Verstopfung, ein überlaufendes Waschbecken oder
               ein blockierter Abfluss in der Küche – solche Probleme treten
               immer dann auf, wenn man sie am wenigsten erwartet. Genau hier
@@ -38,10 +37,12 @@ export default function ServicesSection() {
               am Tag, 7 Tage die Woche für Sie erreichbar und sorgen für eine
               schnelle, zuverlässige Lösung.
             </p>
-            <button className="inline-flex items-center bg-yellow-400 hover:bg-yellow-500 text-navy-900 font-medium py-3 px-6 rounded-md transition-colors">
-              Jetzt anrufen
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
+            <a href="tel:+" className="inline-block mt-4">
+              <Button>
+                Jetzt anrufen
+                <ArrowRight className="size-5" />
+              </Button>
+            </a>
           </div>
 
           {/* Services Grid - Right Side */}
@@ -163,7 +164,7 @@ export default function ServicesSection() {
               <span className="text-blue-600">Professionelle</span> Rohr- und
               Kanalreinigung für langfristige Sauberkeit
             </h2>
-            <p className="text-slate-600 mb-8">
+            <p className="text-black/80">
               Verstopfte oder verschmutzte Rohre können nicht nur unangenehme
               Gerüche verursachen, sondern auch ernsthafte Schäden an Ihrem
               Abwassersystem hervorrufen. Unsere professionelle Rohr- und
@@ -171,10 +172,12 @@ export default function ServicesSection() {
               Ablagerungen, sodass Ihre Rohre wieder frei und funktionstüchtig
               sind.
             </p>
-            <button className="inline-flex items-center bg-yellow-400 hover:bg-yellow-500 text-navy-900 font-medium py-3 px-6 rounded-md transition-colors">
-              Jetzt anrufen
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
+            <a href="tel:+" className="inline-block mt-4">
+              <Button>
+                Jetzt anrufen
+                <ArrowRight className="size-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

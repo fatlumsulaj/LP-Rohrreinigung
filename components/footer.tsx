@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function Footer() {
   return (
     <footer className="bg-main text-white mt-0 md:mt-[-80px]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 md:pt-32">
         {/* Top section with logo and social */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div className="text-2xl font-bold mb-4 md:mb-0">Rohrreinigung 24/7</div>
@@ -95,7 +95,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom section */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-white/10 py-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-slate-400 mb-4 md:mb-0">© 2024 Rohrreinigung 24/7. Alle Rechte vorbehalten.</p>
           <div className="flex space-x-6 text-sm text-slate-400">
             <Link href="#" className="hover:text-blue-400 transition-colors">

@@ -70,3 +70,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.typography-body {
+  @apply md:text-lg text-black/80
+}
