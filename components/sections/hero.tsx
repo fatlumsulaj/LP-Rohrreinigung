@@ -5,8 +5,8 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="bg-main px-4 md:px-8 lg:px-10 relative lg:pb-40">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-main lg:px-10 relative lg:pb-40">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-0">
         <div className="w-full lg:w-2/5 px-1 md:px-3 lg:px-0 py-16 md:py-32 flex flex-col items-center md:items-start">
           <h1 className="text-3xl text-center md:text-left md:text-5xl font-semibold text-white">
             Kanal und Rohrreinigung in Passau und Umgebung
@@ -41,7 +41,7 @@ export default function Hero() {
       <img
         src="https://ik.imagekit.io/inowebagentur/LP%20Rohrreinigung/rohrreinigung%20hero.jpg?updatedAt=1740095216219"
         alt="Rohrreinigung"
-        className="hidden lg:block absolute object-cover right-0 top-0 transform lg:w-1/2 lg:h-full"
+        className="block max-h-[400px] lg:max-h-none w-full lg:absolute object-cover lg:right-0 lg:top-0 lg:transform lg:w-1/2 lg:h-full"
         loading="eager"
       />
     </div>
