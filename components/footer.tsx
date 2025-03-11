@@ -54,13 +54,13 @@ export default function Footer() {
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2" />
                 <a href="tel:+49123456789" className="hover:text-blue-400 transition-colors">
-                  +49 123 456 789
+                  +49 174 9634925
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2" />
                 <a href="mailto:info@rohrreinigung.de" className="hover:text-blue-400 transition-colors">
-                  info@rohrreinigung.de
+                  lp.konstruktion1@gmail.com
                 </a>
               </li>
             </ul>
@@ -87,8 +87,7 @@ export default function Footer() {
                 <Clock className="h-5 w-5 mr-2" />
                 24/7 Notdienst
               </li>
-              <li>Mo-Fr: 08:00 - 18:00</li>
-              <li>Sa: 09:00 - 14:00</li>
+              <li>Mo-Sa: 08:00 - 1/:00</li>
               <li>So: Notdienst</li>
             </ul>
           </div>
