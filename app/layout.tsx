@@ -4,6 +4,9 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
+import GoogleAnalytics from "@/components/google-analytics";
+import CookieBanner from "@/components/cookie-banner";
+
 const figtree = Figtree({ subsets: ['latin'], variable: "--figtree", display: "swap" })
 
 export const metadata: Metadata = {
@@ -22,6 +25,9 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-PNN2RW2675" />
+        <CookieBanner />
       </body>
     </html>
   );
