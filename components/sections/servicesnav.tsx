@@ -14,7 +14,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ Icon, title, description }) =
       <Icon className="text-tertiary w-[70px] h-[70px] bg-white rounded-md p-3" />
       <p className="text-2xl font-semibold my-5">{title}</p>
       <p>{description}</p>
-      <a href="tel:+" className="inline-block mt-3 lg:mt-4">
+      <a href="tel:+49 174 9634925" className="inline-block mt-3 lg:mt-4">
         <Button variant="tertiary">
           Jetzt anrufen
           <ArrowRight className="size-5" />

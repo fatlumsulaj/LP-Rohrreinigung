@@ -10,7 +10,7 @@ export default function CallToAction() {
             Rohrverstopfung? <br className="hidden md:inline" />
             Rufen Sie uns jetzt an!
           </h2>
-          <a href="tel:+">
+          <a href="tel:+49 174 9634925">
             <Button>
               24/7 Notdienst <ArrowRight className="size-5" />
             </Button>

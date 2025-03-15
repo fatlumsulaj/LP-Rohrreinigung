@@ -30,7 +30,7 @@ export default function Hero() {
               <p>24/7 Notdienst</p>
             </div>
           </div>
-          <a href="tel:+" className="block mt-3 lg:mt-6">
+          <a href="tel:+49 174 9634925" className="block mt-3 lg:mt-6">
             <Button size="lg">
               Jetzt Anrufen
               <ArrowRight />

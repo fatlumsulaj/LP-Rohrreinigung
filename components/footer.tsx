@@ -53,7 +53,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2" />
-                <a href="tel:+49123456789" className="hover:text-blue-400 transition-colors">
+                <a href="tel:+49 174 9634925" className="hover:text-blue-400 transition-colors">
                   +49 174 9634925
                 </a>
               </li>
@@ -97,14 +97,11 @@ export default function Footer() {
         <div className="border-t border-white/10 py-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-slate-400 mb-4 md:mb-0">© 2024 Rohrreinigung 24/7. Alle Rechte vorbehalten.</p>
           <div className="flex space-x-6 text-sm text-slate-400">
-            <Link href="#" className="hover:text-blue-400 transition-colors">
+            <Link href="/impressum" className="hover:text-blue-400 transition-colors">
               Impressum
             </Link>
-            <Link href="#" className="hover:text-blue-400 transition-colors">
+            <Link href="/datenschutz" className="hover:text-blue-400 transition-colors">
               Datenschutz
-            </Link>
-            <Link href="#" className="hover:text-blue-400 transition-colors">
-              AGB
             </Link>
           </div>
         </div>

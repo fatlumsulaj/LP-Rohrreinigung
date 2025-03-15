@@ -37,7 +37,7 @@ export default function ServicesSection() {
               am Tag, 7 Tage die Woche für Sie erreichbar und sorgen für eine
               schnelle, zuverlässige Lösung.
             </p>
-            <a href="tel:+" className="inline-block mt-4">
+            <a href="tel:+49 174 9634925" className="inline-block mt-4">
               <Button>
                 Jetzt anrufen
                 <ArrowRight className="size-5" />
@@ -172,7 +172,7 @@ export default function ServicesSection() {
               Ablagerungen, sodass Ihre Rohre wieder frei und funktionstüchtig
               sind.
             </p>
-            <a href="tel:+" className="inline-block mt-4">
+            <a href="tel:+49 174 9634925" className="inline-block mt-4">
               <Button>
                 Jetzt anrufen
                 <ArrowRight className="size-5" />
